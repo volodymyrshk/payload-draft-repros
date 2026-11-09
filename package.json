@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "jobs": "tsx repro-scheduled-jobs.ts",
-    "trash": "tsx repro-trash-pending-draft.ts"
+    "trash": "tsx repro-trash-pending-draft.ts",
+    "race": "tsx repro-version-race.ts"
   },
   "dependencies": {
     "@payloadcms/db-sqlite": "3.93.0",

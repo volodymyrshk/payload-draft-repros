@@ -10,6 +10,8 @@ export default buildConfig({
     {
       slug: 'posts',
       trash: true,
+      // the documented pattern: logged-in users read everything, the public only reads published documents
+      access: { read: ({ req }) => (req.user ? true : { _status: { equals: 'published' } }) },
       fields: [{ name: 'title', type: 'text', required: true }],
       versions: { drafts: { schedulePublish: true } },
     },
