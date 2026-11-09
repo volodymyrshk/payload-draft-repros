@@ -1,0 +1,18 @@
+{
+  "name": "payload-draft-repros",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "jobs": "tsx repro-scheduled-jobs.ts",
+    "trash": "tsx repro-trash-pending-draft.ts"
+  },
+  "dependencies": {
+    "@payloadcms/db-sqlite": "3.93.0",
+    "@payloadcms/richtext-lexical": "3.93.0",
+    "graphql": "^16.9.0",
+    "payload": "3.93.0",
+    "sharp": "^0.34.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
